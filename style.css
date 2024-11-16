@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Personal Facts - CSS Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f8ff;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .facts-container {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            max-width: 800px;
+        }
+
+        .fact-card {
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .fact-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .fact-card:nth-child(1) {
+            background-color: #e6f3ff;
+            border-left: 5px solid #4da6ff;
+        }
+
+        .fact-card:nth-child(2) {
+            background-color: #fff0f4;
+            border-left: 5px solid #ff6b88;
+        }
+
+        .fact-card:nth-child(3) {
+            background-color: #f0fff0;
+            border-left: 5px solid #66cc66;
+        }
+    </style>
+</head>
+<body>
+    <div class="facts-container">
+        <div class="fact-card">
+            An 18-year-old photography enthusiast who combines trekking adventures with capturing mountain views
+        </div>
+        <div class="fact-card">
+            A bookworm who loves experimenting with cooking in their free time
+        </div>
+        <div class="fact-card">
+            An avid traveler who finds happiness in long road trips and exploring new destinations
+        </div>
+    </div>
+</body>
+</html>
